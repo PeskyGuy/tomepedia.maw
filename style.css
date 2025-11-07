@@ -1,0 +1,315 @@
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+#header {
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    font-family: Georgia, serif;
+}
+
+#logo p {
+    margin: 0;
+    font-size: 11px;
+    color: #666;
+    font-style: italic;
+}
+
+#search {
+    float: right;
+    margin-top: 15px;
+}
+
+#search input {
+    padding: 4px;
+    border: 1px solid #aaa;
+    width: 200px;
+}
+
+#search button {
+    padding: 4px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+#navigation {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #aaa;
+    padding: 8px 20px;
+    font-size: 11px;
+}
+
+#navigation a {
+    color: #0645ad;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    overflow: hidden;
+}
+
+#sidebar {
+    float: left;
+    width: 180px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #aaa;
+    padding: 10px;
+}
+
+.portlet {
+    margin-bottom: 20px;
+}
+
+.portlet h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #aaa;
+}
+
+.portlet ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet li {
+    margin: 3px 0;
+}
+
+.portlet a {
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.portlet a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.intro-box {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.main-section h2 {
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.featured-content {
+    line-height: 1.6;
+}
+
+.did-you-know ul, .news-content ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.did-you-know li, .news-content li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.two-column {
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0 8px 0;
+    color: #000;
+}
+
+.column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column li {
+    margin: 3px 0;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #aaa;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+}
+
+#footer a {
+    color: #0645ad;
+}
+
+.infobox {
+    float: right;
+    width: 250px;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    margin: 0 0 10px 10px;
+    font-size: 11px;
+}
+
+.infobox-title {
+    background-color: #ccc;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+.infobox-content {
+    padding: 10px;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+.infobox td:first-child {
+    font-weight: bold;
+    width: 80px;
+}
+
+.article-content {
+    line-height: 1.6;
+}
+
+.article-content h2 {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaa;
+    margin-top: 25px;
+    padding-bottom: 3px;
+}
+
+.article-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.toc {
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.toc-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toc li {
+    margin: 3px 0;
+}
+
+.stub {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    margin: 20px 0;
+    font-size: 11px;
+    font-style: italic;
+}
