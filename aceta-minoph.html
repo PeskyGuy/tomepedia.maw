@@ -251,7 +251,84 @@
     <p>This page was last modified on 15 Harvest 2005 A.U., at 10:33.</p>
     <p>All text is available under the terms of the <a href="#">Free Knowledge License</a>.</p>
     <p>Tomepedia® is a registered trademark of the Vyrodin Knowledge Foundation.</p>
+    <p style="color: #333; font-size: 9px; margin-top: 15px; user-select: text;">
+        1955 • 1970 • 1880 • 1935 • 1948 • 1850
+    </p>
 </div>
+
+<script>
+// Puzzle: Click the dates in chronological order
+let sequence = [];
+const correctSequence = ['1850', '1880', '1935', '1948', '1955', '1970'];
+let clickableText = null;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.getElementById('footer');
+    const dateText = footer.querySelector('p[style*="font-size: 9px"]');
+    
+    if (dateText) {
+        // Make dates clickable
+        const dates = ['1955', '1970', '1880', '1935', '1948', '1850'];
+        let html = '';
+        
+        dates.forEach((date, index) => {
+            html += '<span class="date-click" data-date="' + date + '" style="cursor: pointer; padding: 2px 4px;">' + date + '</span>';
+            if (index < dates.length - 1) html += ' • ';
+        });
+        
+        dateText.innerHTML = html;
+        
+        // Add click handlers
+        document.querySelectorAll('.date-click').forEach(function(el) {
+            el.addEventListener('click', function() {
+                const date = this.getAttribute('data-date');
+                sequence.push(date);
+                
+                // Visual feedback
+                this.style.color = '#8a2be2';
+                this.style.textShadow = '0 0 5px #8a2be2';
+                
+                // Check if sequence is correct so far
+                let correct = true;
+                for (let i = 0; i < sequence.length; i++) {
+                    if (sequence[i] !== correctSequence[i]) {
+                        correct = false;
+                        break;
+                    }
+                }
+                
+                if (!correct) {
+                    // Reset
+                    setTimeout(function() {
+                        sequence = [];
+                        document.querySelectorAll('.date-click').forEach(function(el) {
+                            el.style.color = '#333';
+                            el.style.textShadow = 'none';
+                        });
+                    }, 500);
+                } else if (sequence.length === correctSequence.length) {
+                    // Success!
+                    setTimeout(function() {
+                        window.location.href = 'cult-ascendant-path.html';
+                    }, 800);
+                }
+            });
+            
+            el.addEventListener('mouseenter', function() {
+                if (this.style.color !== 'rgb(138, 43, 226)') {
+                    this.style.color = '#666';
+                }
+            });
+            
+            el.addEventListener('mouseleave', function() {
+                if (this.style.color !== 'rgb(138, 43, 226)') {
+                    this.style.color = '#333';
+                }
+            });
+        });
+    }
+});
+</script>
 
 </body>
 </html>
